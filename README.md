@@ -22,8 +22,8 @@ My semestral work for BI-ARD at [FIT CTU](https://fit.cvut.cz/en).
 
 Characters that can be decoded and their representation in Morse code are defined in the following table.
 
-|||||
-----|----|----|----
+|||||||||
+----|----|----|----|----|----|----|----
 A | .- | K | -.- | U | ..- | 4 | ....-
 B | -... | L | .-.. | V | ...- | 5 | .....
 C | -.-. | M | -- | W | .-- | 6 | -....
