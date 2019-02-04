@@ -16,6 +16,35 @@ My semestral work for BI-ARD at [FIT CTU](https://fit.cvut.cz/en).
    - Finish(F): Transmission will end, the application will get back to initial state.
    - Backspace(B): The last character of the received message will be removed.
 
+## Specifications
+
+### Morse code
+
+Characters that can be decoded and their representation in Morse code are defined in the following table.
+
+|||||
+----|----|----|----
+A | .- | K | -.- | U | ..- | 4 | ....-
+B | -... | L | .-.. | V | ...- | 5 | .....
+C | -.-. | M | -- | W | .-- | 6 | -....
+D | -.. | N | -. | X | -..- | 7 | --...
+E | . | O |  --- | Y | -.-- | 8 | ---..
+F | ..-. | P | .--. | Z | --.. | 9 | ----.
+G | --. |  Q | --.- | 0 | ----- | + | .-.-.
+H | .... | R | .-. | 1 | .---- | = | -...-
+I | .. |  S | ... | 2 | ..--- | / | -..-.
+J | .--- |  T | - | 3 | ...-- | |
+
+### Display
+
+The screen has only 160x128 pixels, the font size is 10 pixels and additional information on displays further decrease the space we have. In total only 126 (14x9) characters can be displayed, there is no possibility to have a message containing more than 126 symbols.
+
+### Light sensor
+
+Detecting of the light signals made by the user is done by comparing current light intensity with past light intensity. Thanks to this approach both decreasing and increasing light intensity can be used to send messages.
+Unfortunately, the light sensor cannot distinguish increase of light intensity when there is already lots of light.
+Before and after sending signal (message) must be approximately the same light intensity, otherwise the receiving will never end.
+
 ## License
 
 Licensed under the [MIT License](LICENSE).
